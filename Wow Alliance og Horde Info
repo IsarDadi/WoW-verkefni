@@ -135,6 +135,7 @@ body {
     width: 49%;
     border-left: none;
     float: left;
+    padding: 5px;
 }
 
 .boxR {
@@ -142,4 +143,5 @@ body {
     width: 49%;
     border-right: none;
     float: right;
+    padding: 5px;
 }
