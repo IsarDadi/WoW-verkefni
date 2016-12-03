@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    color:white;
+    background-image: url("background1.jpg");
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+
+/*
+******************************
+
+            MISC
+
+******************************
+*/
+@import "compass/css3";
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background: rgb(33, 21, 16);
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+    border-left: rgba(248, 183, 0, 0.5) 1px solid;
+  display: block;
+  padding: 1em;
+  color: rgba(248, 183, 0, 0.81);
+}
+
+.navigation a:hover {
+  background: darken(deepskyblue, 2%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+    border-right: 6px dotted red;
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+.center {
+    text-align: center;
+}
+
+.fLeft {
+    float: left;
+}
+
+.boxL {
+    background-color: rgba(10, 21, 150, 0.19);
+    width: 49%;
+    border-left: none;
+    float: left;
+    padding: 5px 1em 1em 2em;
+
+}
+
+.boxR {
+    background-color: rgba(155, 0, 0, 0.19);
+    width: 49%;
+    border-right: none;
+    float: right;
+    padding: 5px 2em 1em 1em;
+}
