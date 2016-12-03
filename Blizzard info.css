@@ -1,12 +1,9 @@
-
 body{
   background-color: black;
   background-repeat: no-repeat;
    
 }
-.texti{
-  
-}
+
 .text1{
     font-size: 18px;
   background: -webkit-linear-gradient(#1E90FF, #FFF8DC);
@@ -15,6 +12,7 @@ body{
   width: 25%;
   box-sizing: border-box;
   float: left;
+  text-shadow: 0 0 10px #F0FFFF;
 
  }  
  .text2{
@@ -25,6 +23,7 @@ body{
   width: 25%;
   box-sizing: border-box;
   float: left;
+  text-shadow: 0 0 10px #F0FFFF;
  }  
  .text3{
     font-size: 18px;
@@ -34,6 +33,7 @@ body{
   width: 25%;
   box-sizing: border-box;
   float: left;
+  text-shadow: 0 0 10px #F0FFFF;
  }  
  .text4{
     font-size: 18px;
@@ -43,13 +43,23 @@ body{
   width: 25%;
   box-sizing: border-box;
   float: left;
+  text-shadow: 0 0 10px #F0FFFF;
+
  }  
 }
 .h2{
   color: blue;
   text-align: center;
   width: 100%;
+}
 
+.location{
+  font-size: 18px;
+  background: -webkit-linear-gradient(#1E90FF, #FFF8DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px #F0FFFF;
+  text-align: center; 
 }
 
 @import "compass/css3";
